@@ -131,3 +131,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_MEDIA = os.path.join(BASE_DIR, 'staticfiles')
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.SessionAuthentication',
+    )
+}
