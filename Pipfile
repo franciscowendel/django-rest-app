@@ -10,6 +10,7 @@ djangorestframework = "*"
 [dev-packages]
 flake8 = "*"
 django-adminlte2 = "*"
+python-decouple = "*"
 
 [requires]
 python_version = "3.8"
