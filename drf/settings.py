@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 
     'drf',
     'djangorestframework',
+    'core',
 ]
 
 MIDDLEWARE = [
