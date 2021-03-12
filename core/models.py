@@ -11,4 +11,10 @@ class Base(models.Model):
 
 
 class Curso(Base):
-    pass
+    titulo = models.CharField('Título', max_length=150)
+    url = models.URLField('URL', default=True)
+
+    class Meta:
+        verbose_name = 'Curso'
+        verbose_name_plural = 'Cursos'
+        ordering = ['id']
