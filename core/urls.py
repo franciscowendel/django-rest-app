@@ -23,4 +23,6 @@ urlpatterns = [
     path('avaliacoes/<int:pk>/', AvaliacaoAPIView.as_view(), name='avaliacao'),
 
     path('cursos/<int:curso_pk>/avaliacoes/', AvaliacoesAPIView.as_view(), name='curso_avaliacoes'),
+    path('cursos/<int:curso_pk>/avaliacoes/<int:avaliacao_pk>/', AvaliacaoAPIView.as_view(), name='curso_avaliacao'),
+
 ]
