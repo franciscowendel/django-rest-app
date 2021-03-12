@@ -28,5 +28,17 @@ class AvaliacaoAPIView(generics.RetrieveUpdateDestroyAPIView):
 # USANDO viewsets
 
 class CursoViewSet(viewsets.ModelViewSet):
-    queryset = Curso.objects.all()
+    queryset = Curso.objects.all()  # noqa
     serializer_class = CursoSerializer
+
+
+class AvaliacaoViewSet(
+    mixins.ListModelMixin,
+    mixins.CreateModelMixin,
+    mixins.RetrieveModelMixin,
+    mixins.UpdateModelMixin,
+    mixins.DestroyModelMixin,
+    viewsets.GenericViewSet
+   ):
+    queryset = Avaliacao.objects.all()  # noqa
+    serializer_class = AvaliacaoSerializer
