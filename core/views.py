@@ -46,7 +46,9 @@ class CursoViewSet(viewsets.ModelViewSet):
 
     @action(detail=True, methods=['get'])
     def avaliacoes(self, request, pk=None):
-        pass
+        curso = self.get_object()
+        serializer = AvaliacaoSerializer(curso.avaliacoes, many=True)
+        return Response(serializer.data)
 
 
 class AvaliacaoViewSet(
