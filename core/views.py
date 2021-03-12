@@ -3,6 +3,7 @@ from .models import Curso, Avaliacao
 from .serializers import CursoSerializer, AvaliacaoSerializer
 from rest_framework import viewsets
 from rest_framework import mixins
+from rest_framework.generics import get_object_or_404
 
 
 class CursosAPIView(generics.ListCreateAPIView):
@@ -28,6 +29,11 @@ class AvaliacoesAPIView(generics.ListCreateAPIView):
 class AvaliacaoAPIView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Avaliacao.objects.all()  # noqa
     serializer_class = AvaliacaoSerializer
+
+    def get_object(self):
+        if self.kwargs.get('curso_pk'):
+            pass
+        return get_object_or_404(self.get_queryset(), pk=self.kwargs.get('avaliacao_pk'))
 
 
 # USANDO viewsets
