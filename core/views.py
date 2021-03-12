@@ -1,6 +1,8 @@
 from rest_framework import generics
 from .models import Curso, Avaliacao
 from .serializers import CursoSerializer, AvaliacaoSerializer
+from rest_framework import viewsets
+from rest_framework import mixins
 
 
 class CursosAPIView(generics.ListCreateAPIView):
@@ -21,3 +23,10 @@ class AvaliacoesAPIView(generics.ListCreateAPIView):
 class AvaliacaoAPIView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Avaliacao.objects.all()  # noqa
     serializer_class = AvaliacaoSerializer
+
+
+# USANDO viewsets
+
+class CursoViewSet(viewsets.ModelViewSet):
+    queryset = Curso.objects.all()
+    serializer_class = CursoSerializer
