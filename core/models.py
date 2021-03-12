@@ -25,3 +25,4 @@ class Avaliacao(Base):
     nome = models.CharField(max_length=150)
     email = models.EmailField()
     comentario = models.TextField(blank=True, default='')
+    avaliacao = models.DecimalField(decimal_places=1, max_digits=2)
