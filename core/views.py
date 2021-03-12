@@ -32,7 +32,7 @@ class AvaliacaoAPIView(generics.RetrieveUpdateDestroyAPIView):
 
     def get_object(self):
         if self.kwargs.get('curso_pk'):
-            pass
+            return get_object_or_404(self.get_queryset(), curso_id=self.kwargs.get('curso_pk'), pk=self.kwargs.get('avaliacao_pk'))  # noqa
         return get_object_or_404(self.get_queryset(), pk=self.kwargs.get('avaliacao_pk'))
 
 
