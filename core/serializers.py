@@ -27,6 +27,9 @@ class AvaliacaoSerializer(serializers.ModelSerializer):
 
 
 class CursoSerializer(serializers.ModelSerializer):
+
+    avaliacoes = serializers.HyperlinkedRelatedField(many=True, read_only=True, view_name='avaliacao-detail')
+
     class Meta:
         model = Curso
         fields = (
@@ -36,4 +39,5 @@ class CursoSerializer(serializers.ModelSerializer):
             'criado',
             'modificado',
             'ativo',
+            'avaliacoes',
         )
