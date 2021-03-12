@@ -21,4 +21,4 @@ class Curso(Base):
 
 
 class Avaliacao(Base):
-    pass
+    curso = models.ForeignKey(Curso, related_name='avaliacoes', on_delete=models.CASCADE)
