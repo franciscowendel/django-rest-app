@@ -1,1 +1,1 @@
-from django.shortcuts import render  # noqa
+from rest_framework import generics  # noqa

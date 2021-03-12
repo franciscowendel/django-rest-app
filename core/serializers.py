@@ -8,3 +8,14 @@ class AvaliacaoSerializer(serializers.ModelSerializer):
             'email': {'write_only': True}  # Protegendo o email!
         }
         model = Avaliacao
+        fields = (
+            'id',
+            'curso',
+            'nome',
+            'email',
+            'comentario',
+            'avaliacao',
+            'criado',
+            'modificado',
+            'ativo',
+        )
