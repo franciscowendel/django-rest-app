@@ -19,6 +19,10 @@ class AvaliacoesAPIView(generics.ListCreateAPIView):
     queryset = Avaliacao.objects.all()  # noqa
     serializer_class = AvaliacaoSerializer
 
+    def get_queryset(self):
+        if self.kwargs.get('curso_pk'):
+            pass
+
 
 class AvaliacaoAPIView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Avaliacao.objects.all()  # noqa
