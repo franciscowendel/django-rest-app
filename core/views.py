@@ -22,6 +22,7 @@ class AvaliacoesAPIView(generics.ListCreateAPIView):
     def get_queryset(self):
         if self.kwargs.get('curso_pk'):
             pass
+        return self.queryset.all()
 
 
 class AvaliacaoAPIView(generics.RetrieveUpdateDestroyAPIView):
