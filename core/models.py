@@ -26,3 +26,6 @@ class Avaliacao(Base):
     email = models.EmailField()
     comentario = models.TextField(blank=True, default='')
     avaliacao = models.DecimalField(decimal_places=1, max_digits=2)
+
+    class Meta:
+        pass
