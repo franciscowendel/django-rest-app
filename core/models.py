@@ -12,7 +12,7 @@ class Base(models.Model):
 
 class Curso(Base):
     titulo = models.CharField('Título', max_length=150)
-    url = models.URLField('URL', default=True)
+    url = models.URLField('URL', unique=True)
 
     class Meta:
         verbose_name = 'Curso'
