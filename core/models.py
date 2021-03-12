@@ -18,3 +18,7 @@ class Curso(Base):
         verbose_name = 'Curso'
         verbose_name_plural = 'Cursos'
         ordering = ['id']
+
+
+class Avaliacao(Base):
+    pass
