@@ -19,6 +19,9 @@ class Curso(Base):
         verbose_name_plural = 'Cursos'
         ordering = ['id']
 
+    def __str__(self):
+        return self.titulo
+
 
 class Avaliacao(Base):
     curso = models.ForeignKey(Curso, related_name='avaliacoes', on_delete=models.CASCADE)
@@ -32,3 +35,6 @@ class Avaliacao(Base):
         verbose_name_plural = 'Avaliações'
         unique_together = ['email', 'curso']
         ordering = ['id']
+
+    def __str__(self):
+        return self.nome
