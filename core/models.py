@@ -28,4 +28,7 @@ class Avaliacao(Base):
     avaliacao = models.DecimalField(decimal_places=1, max_digits=2)
 
     class Meta:
-        pass
+        verbose_name = 'Avaliação'
+        verbose_name_plural = 'Avaliações'
+        unique_together = ['email', 'curso']
+        ordering = ['id']
