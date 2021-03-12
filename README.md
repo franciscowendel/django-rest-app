@@ -4,7 +4,7 @@ A Django project with a lot of DRF (Django Rest Framework) on it.
 
 Como executar o projeto:
 
-1. Caso tenha o pipenv instalado:
+1. Caso não tenha o pipenv instalado:
 ```console
 pip install pipenv
 pipenv sync -d
