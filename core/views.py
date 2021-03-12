@@ -6,3 +6,8 @@ from .serializers import CursoSerializer, AvaliacaoSerializer
 class CursosAPIView(generics.ListCreateAPIView):
     queryset = Curso.objects.all()  # noqa
     serializer_class = CursoSerializer
+
+
+class CursoAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Curso.objects.all()  # noqa
+    serializer_class = CursoSerializer
