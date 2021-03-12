@@ -20,6 +20,28 @@ pipenv sync -d
 - ALLOWED_HOSTS=localhost,127.0.0.1
 - SECRET_KEY=minhachave
 
+4. Faça a migração dos dados do projeto digitando os seguintes comandos:
+```console
+pipenv run python manage.py makemigrations
+
+pipenv run python manage.py migrate
+```
+
+5. Crie um superusuário:
+```console
+pipenv run python manage.py createsuperuser
+```
+
+6. Rode o servidor:
+```console
+pipenv run python manage.py runserver
+```
+
+7. Entre no admin:
+- http://127.0.0.1:8000/admin/
+
+8. Use o projeto.
+
 [![Build Status](https://travis-ci.com/franciscowendel/django-rest-project.svg?branch=main)](https://travis-ci.com/franciscowendel/django-rest-project)
 [![Python 3](https://pyup.io/repos/github/franciscowendel/django-rest-project/python-3-shield.svg)](https://pyup.io/repos/github/franciscowendel/django-rest-project/)
 [![Updates](https://pyup.io/repos/github/franciscowendel/django-rest-project/shield.svg)](https://pyup.io/repos/github/franciscowendel/django-rest-project/)
