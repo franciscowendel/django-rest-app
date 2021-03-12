@@ -22,3 +22,4 @@ class Curso(Base):
 
 class Avaliacao(Base):
     curso = models.ForeignKey(Curso, related_name='avaliacoes', on_delete=models.CASCADE)
+    nome = models.CharField(max_length=150)
