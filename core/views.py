@@ -39,6 +39,6 @@ class AvaliacaoViewSet(
     mixins.UpdateModelMixin,
     mixins.DestroyModelMixin,
     viewsets.GenericViewSet
-   ):
+):
     queryset = Avaliacao.objects.all()  # noqa
     serializer_class = AvaliacaoSerializer
