@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Curso, Avaliacao  # noqa
+from .models import Curso, Avaliacao
 
 
 class AvaliacaoSerializer(serializers.ModelSerializer):
@@ -19,3 +19,8 @@ class AvaliacaoSerializer(serializers.ModelSerializer):
             'modificado',
             'ativo',
         )
+
+
+class CursoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Curso
