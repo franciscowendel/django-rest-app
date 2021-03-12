@@ -16,3 +16,8 @@ class CursoAPIView(generics.RetrieveUpdateDestroyAPIView):
 class AvaliacoesAPIView(generics.ListCreateAPIView):
     queryset = Avaliacao.objects.all()  # noqa
     serializer_class = AvaliacaoSerializer
+
+
+class AvaliacaoAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Avaliacao.objects.all()  # noqa
+    serializer_class = AvaliacaoSerializer
