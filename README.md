@@ -1,4 +1,4 @@
-# django-rest-project
+# django-rest-app
 
 A Django project with a lot of DRF (Django Rest Framework) on it.
 
