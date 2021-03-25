@@ -41,7 +41,3 @@ pipenv run python manage.py runserver
 - http://127.0.0.1:8000/admin/
 
 8. Use o projeto.
-
-[![Build Status](https://www.travis-ci.com/franciscowendel/django-rest-app.svg?branch=main)](https://www.travis-ci.com/franciscowendel/django-rest-app)
-[![Updates](https://pyup.io/repos/github/franciscowendel/django-rest-app/shield.svg)](https://pyup.io/repos/github/franciscowendel/django-rest-app/)
-[![Python 3](https://pyup.io/repos/github/franciscowendel/django-rest-app/python-3-shield.svg)](https://pyup.io/repos/github/franciscowendel/django-rest-app/)
