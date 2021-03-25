@@ -42,6 +42,6 @@ pipenv run python manage.py runserver
 
 8. Use o projeto.
 
-[![Build Status](https://travis-ci.com/franciscowendel/django-rest-project.svg?branch=main)](https://travis-ci.com/franciscowendel/django-rest-project)
-[![Python 3](https://pyup.io/repos/github/franciscowendel/django-rest-project/python-3-shield.svg)](https://pyup.io/repos/github/franciscowendel/django-rest-project/)
-[![Updates](https://pyup.io/repos/github/franciscowendel/django-rest-project/shield.svg)](https://pyup.io/repos/github/franciscowendel/django-rest-project/)
+[![Build Status](https://www.travis-ci.com/franciscowendel/django-rest-app.svg?branch=main)](https://www.travis-ci.com/franciscowendel/django-rest-app)
+[![Updates](https://pyup.io/repos/github/franciscowendel/django-rest-app/shield.svg)](https://pyup.io/repos/github/franciscowendel/django-rest-app/)
+[![Python 3](https://pyup.io/repos/github/franciscowendel/django-rest-app/python-3-shield.svg)](https://pyup.io/repos/github/franciscowendel/django-rest-app/)
