@@ -13,8 +13,6 @@ django-adminlte2 = "*"
 python-decouple = "*"
 dj-database-url = "*"
 psycopg2-binary = "*"
-jsonpath = "*"
-requests = "*"
 
 [requires]
 python_version = "3.8"
